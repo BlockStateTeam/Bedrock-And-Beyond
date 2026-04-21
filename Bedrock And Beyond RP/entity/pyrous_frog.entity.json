@@ -1,0 +1,55 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bs_bb:pyrous_frog",
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            "textures": {
+                "default": "textures/bs_bb/entity/pyrous_frog"
+            },
+            "geometry": {
+                "default": "geometry.bs_bb.pyrous_frog"
+            },
+            "spawn_egg": {
+                "texture": "pyrous_frog_spawn_egg"
+            },
+            "animations": {
+                "croak": "animation.bs_bb.pyrous_frog.croak",
+                "jump": "animation.bs_bb.pyrous_frog.jump",
+                "tongue": "animation.bs_bb.pyrous_frog.tongue",
+                "walk": "animation.bs_bb.pyrous_frog.walk",
+                "swim": "animation.bs_bb.pyrous_frog.swim",
+                "idle_water": "animation.bs_bb.pyrous_frog.idle.water",
+                "look_at_target": "animation.bs_bb.common.look_at_target",
+                "general": "controller.animation.frog.general",
+                "croaking": "controller.animation.frog.croaking",
+                "state1": "animation.bs_bb.pyrous_frog.state1",
+                "state2": "animation.bs_bb.pyrous_frog.state2",
+                "state3": "animation.bs_bb.pyrous_frog.state3",
+                "eat_mob": "controller.animation.frog.eat_mob"
+            },
+            "scripts": {
+                "animate": [
+                    "general",
+                    "croaking",
+                    "eat_mob",
+                    {
+                        "state1": "q.property('bs_bb:pyrous_state') == 1"
+                    },
+                    {
+                        "state2": "q.property('bs_bb:pyrous_state') == 2"
+                    },
+                    {
+                        "state3": "q.property('bs_bb:pyrous_state') == 3"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.moving = query.ground_speed > 0 || query.vertical_speed > 0;"
+                ]
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

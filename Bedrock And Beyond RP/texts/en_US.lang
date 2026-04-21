@@ -1,0 +1,8 @@
+entity.bs_bb:pyrous_flower.name=Pyrous Flower
+tile.bs_bb:pyrous_flower.name=Pyrous Flower
+tile.bs_bb:pyrous_vines.name=Pyrous Vines
+tile.bs_bb:pyrous_vines_end.name=Pyrous Vines End
+item.bs_bb:pyrous_vines=Pyrous Vines
+
+entity.bs_bb:pyrous_frog.name=Pyrous Frog
+item.spawn_egg.entity.bs_bb:pyrous_frog.name=Spawn Pyrous Frog

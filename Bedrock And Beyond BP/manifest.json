@@ -1,0 +1,44 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Bedrock And Beyond",
+        "description": "Bedrock And Beyond Behavior Pack",
+        "uuid": "c604684d-b60f-d828-101e-d06bd45bfebf",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 16, 0]
+    },
+    "metadata": {
+        "generated_with": {
+            "blockbench_entity_wizard": ["1.8.2"]
+        }
+    },
+    "modules": [
+        {
+            "description": "Behavior",
+            "version": [1, 0, 0],
+            "uuid": "1322bc56-aa21-c2c0-0d8c-a71a665a6dfe",
+            "type": "data"
+        },
+        {
+            "type": "script",
+            "uuid": "e4ea51c0-16aa-44f9-8fe3-1b4bf8f04236",
+            "version": [1, 0, 0],
+            "language": "javascript",
+            "entry": "scripts/app.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "92f7b321-e130-f90c-3671-4a9bbd823e3a",
+            "version": [1, 0, 0]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.6.0"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.0.0"
+        }
+    ]
+}

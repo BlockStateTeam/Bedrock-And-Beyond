@@ -1,0 +1,10 @@
+{
+    "texture_data": {
+        "pyrous_frog_spawn_egg": {
+            "textures": ["textures/bs_bb/items/pyrous_frog_spawn_egg"]
+        },
+        "pyrous_vines": {
+            "textures": "textures/bs_bb/items/pyrous_vines"
+        }
+    }
+}

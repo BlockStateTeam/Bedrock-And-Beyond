@@ -1,0 +1,35 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "bs_bb:pyrous_flower",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "animations": {
+                "falling": "animation.bs_bb.pyrous_flower.falling",
+                "default": "animation.bs_bb.pyrous_flower.default"
+            },
+            "scripts": {
+                "initialize": [
+                    "v.rot_x = Math.random_integer(-25, 25);",
+                    "v.rot_y = Math.random_integer(0, 360);",
+                    "v.rot_z = Math.random_integer(-25, 25);"
+                ],
+                "animate": [
+                    {
+                        "falling": "!q.is_on_ground && !query.is_in_contact_with_water"
+                    },
+                    "default"
+                ]
+            },
+            "textures": {
+                "default": "textures/bs_bb/entity/pyrous_flower"
+            },
+            "geometry": {
+                "default": "geometry.bs_bb.pyrous_flower"
+            },
+            "render_controllers": ["controller.render.default"]
+        }
+    }
+}

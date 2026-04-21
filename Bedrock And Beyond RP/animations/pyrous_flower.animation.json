@@ -1,0 +1,25 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "animation.bs_bb.pyrous_flower.falling": {
+            "loop": true,
+            "bones": {
+                "root": {
+                    "rotation": [
+                        "-15*math.cos(q.anim_time*45)",
+                        "-720 * (q.anim_time - (1 / 0.8) * (1 - Math.exp(-0.8 * q.anim_time)))",
+                        "15*math.sin(q.anim_time*90)"
+                    ]
+                }
+            }
+        },
+        "animation.bs_bb.pyrous_flower.default": {
+            "loop": true,
+            "bones": {
+                "root": {
+                    "rotation": ["v.rot_x", "v.rot_y", "v.rot_z"]
+                }
+            }
+        }
+    }
+}

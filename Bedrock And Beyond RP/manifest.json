@@ -1,0 +1,23 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Bedrock And Beyond",
+        "description": "Bedrock And Beyond Resource Pack",
+        "uuid": "92f7b321-e130-f90c-3671-4a9bbd823e3a",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 16, 0]
+    },
+    "metadata": {
+        "generated_with": {
+            "blockbench_entity_wizard": ["1.8.2"]
+        }
+    },
+    "modules": [
+        {
+            "description": "Bedrock And Beyond",
+            "type": "resources",
+            "uuid": "e1a22897-ece1-0afb-d958-d16d25a972da",
+            "version": [1, 0, 0]
+        }
+    ]
+}

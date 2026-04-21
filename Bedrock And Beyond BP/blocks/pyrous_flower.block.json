@@ -1,0 +1,53 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "bs_bb:pyrous_flower",
+            "states": {
+                "bs_bb:growth_stage": {
+                    "values": { "min": 0, "max": 12 }
+                }
+            }
+        },
+        "components": {
+            "minecraft:flammable": {
+                "destroy_chance_modifier": 0,
+                "catch_chance_modifier": 100
+            },
+            "minecraft:loot": "loot_tables/pyrous_flower.json",
+            "bs_bb:is_vines": {
+                "block_type_to_set_if_end": ["bs_bb:pyrous_flower"],
+                "block_type_to_set_if_not_end": "bs_bb:pyrous_vines"
+            },
+            "bs_bb:pyrous_flower": {},
+            "minecraft:tick": {
+                "interval_range": [100, 2000],
+                "looping": true
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "pyrous_flower",
+                    "render_method": "alpha_test_single_sided"
+                }
+            },
+            "minecraft:collision_box": false,
+            "minecraft:selection_box": true,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.1
+            },
+            "minecraft:destructible_by_explosion": false,
+            "minecraft:geometry": "minecraft:geometry.cross",
+            "minecraft:light_dampening": 0,
+            "minecraft:map_color": "#5f4a2b",
+            "minecraft:liquid_detection": {
+                "detection_rules": [
+                    {
+                        "liquid_type": "water",
+                        "can_contain_liquid": true,
+                        "on_liquid_touches": "popped"
+                    }
+                ]
+            }
+        }
+    }
+}

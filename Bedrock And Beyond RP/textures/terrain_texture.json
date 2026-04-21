@@ -1,0 +1,17 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "padding": 8,
+    "num_mip_levels": 4,
+    "texture_data": {
+        "pyrous_vines": {
+            "textures": "textures/bs_bb/blocks/pyrous_vines"
+        },
+        "pyrous_vines_end": {
+            "textures": "textures/bs_bb/blocks/pyrous_vines_end"
+        },
+        "pyrous_flower": {
+            "textures": "textures/bs_bb/blocks/pyrous_flower"
+        }
+    }
+}
